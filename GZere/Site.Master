@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="GZere.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head runat="server">
+     
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Gestion Zere </title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="style/julystyle.css" type="text/css" media="screen" />
+
+   
+
+
+    <style type="text/css">
+        .auto-style1 {
+            width: 878px;
+            height: 13px;
+        }
+        </style>
+    
+         
+   
+    <asp:ContentPlaceHolder ID="head" runat="server">
+       
+
+    </asp:ContentPlaceHolder>
+
+</head>
+
+
+
+<body >
+    <form runat="server">
+
+      
+      
+ 
+   
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+              
+
+            </asp:ContentPlaceHolder>
+     <!-- </div> -->  
+    </form>
+   <p class="auto-style1">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &copy; <%: DateTime.Now.Year %> - Designed By MJOM ZER-E</p>
+
+</body>
+     
+</html>
